@@ -1,0 +1,28 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.8498070646068832 0.5190422581054033 0.09177737872197199 0.3272944330409418
+  position 0.3534527412868303 1.222892124791955 1.7173119215506232
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Panda {
+  hidden position_0_0 0.0
+  hidden rotation_1 0 0 -1 0.0
+  hidden position_1_0 0.0
+  hidden rotation_2 -0.9999999999822381 0.0 0.0 1.5707960000177619
+  hidden position_2_0 0.0
+  hidden rotation_3 0.9999999999511661 0.0 0.0 1.570796000048834
+  hidden position_3_0 0.0
+  hidden rotation_4 0.9999999999838479 0.0 0.0 1.5707960000161518
+  hidden position_4_0 0.0
+  hidden rotation_5 -0.9999999999880811 0.0 0.0 1.570796000011919
+  hidden position_5_0 0.0
+  hidden rotation_6 0.99999999999638 0.0 0.0 1.57079600000362
+  hidden position_6_0 0.0
+  hidden rotation_7 0.9999999999998824 0.0 0.0 1.5707960000001175
+}

@@ -1,0 +1,30 @@
+#VRML_SIM R2021b utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# tags: hidden
+# Extracted from: /home/nataliya/moveit_resources/panda_description/urdf/panda.urdf
+
+PROTO Panda_link6_5Mesh [
+]
+{
+  Shape {
+    appearance PBRAppearance {
+      baseColor 0.000000 1.000000 0.000000
+      transparency 0.000000
+      roughness 0.992188
+      metalness 0
+      emissiveColor 0.000000 0.000000 0.000000
+    }
+    geometry DEF link6_5 IndexedFaceSet {
+      coord Coordinate {
+        point [
+          0.087385 0.077346 -0.026197, 0.088156 0.077226 -0.026124, 0.087716 0.077189 -0.026550, 0.089416 0.077433 -0.024223, 0.089745 0.077296 -0.024571, 0.089169 0.077282 -0.025136, 0.087391 0.077521 -0.025514, 0.087053 0.077497 -0.025843, 0.087733 0.077540 -0.025180, 0.088602 0.077255 -0.025689, 0.088079 0.077554 -0.024842, 0.088428 0.077563 -0.024500, 0.089083 0.077566 -0.023871, 0.088744 0.077694 -0.023516, 0.088093 0.077697 -0.024147, 0.088076 0.077824 -0.023478, 0.088402 0.077818 -0.023156, 0.087757 0.077825 -0.023793, 
+        ]
+      }
+      coordIndex [
+        0 1 2 -1 3 4 5 -1 6 0 7 -1 6 1 0 -1 8 9 1 -1 8 1 6 -1 10 5 9 -1 10 9 8 -1 11 12 3 -1 11 3 5 -1 11 5 10 -1 13 12 11 -1 14 13 11 -1 15 16 13 -1 15 13 14 -1 17 15 14 -1 
+      ]
+      creaseAngle 1
+    }
+  }
+}

@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: 2daff263ed879d5b09fbb6acba4f0948
+needsRobotAncestor: 1
+baseType: Robot
+slotType: 
+parameters: translation,rotation,name,controller,controllerArgs,customData,supervisor,synchronization,selfCollision,staticBase,toolSlot
+tags: 
+license:  Apache License 2.0
+licenseUrl:  http://www.apache.org/licenses/LICENSE-2.0
+documentationUrl: 
+info: This\sis\sa\sproto\sfile\sfor\sWebots\sfor\sthe\sPanda\nExtracted\sfrom:\s/home/nataliya/moveit_resources/panda_description/urdf/panda.urdf

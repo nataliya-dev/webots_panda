@@ -1,0 +1,465 @@
+#VRML_SIM R2021b utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# This is a proto file for Webots for the Panda
+# Extracted from: /home/nataliya/moveit_resources/panda_description/urdf/panda.urdf
+
+PROTO Panda [
+  field  SFVec3f     translation     0 0 0
+  field  SFRotation  rotation        1 0 0 -1.5708
+  field  SFString    name            "Panda"  # Is `Robot.name`.
+  field  SFString    controller      "panda_controller"   # Is `Robot.controller`.
+  field  MFString    controllerArgs  []       # Is `Robot.controllerArgs`.
+  field  SFString    customData      ""       # Is `Robot.customData`.
+  field  SFBool      supervisor      TRUE    # Is `Robot.supervisor`.
+  field  SFBool      synchronization TRUE     # Is `Robot.synchronization`.
+  field  SFBool      selfCollision   FALSE    # Is `Robot.selfCollision`.
+  field  SFBool      staticBase      TRUE     # Defines if the robot base should be pinned to the static environment.
+  field  MFNode      toolSlot        []       # Extend the robot with new nodes at the end of the arm.
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    controller IS controller
+    controllerArgs IS controllerArgs
+    customData IS customData
+    supervisor IS supervisor
+    synchronization IS synchronization
+    selfCollision IS selfCollision
+    children [
+      Panda_link0_0Mesh {
+      }
+      Panda_link0_1Mesh {
+      }
+      Panda_link0_2Mesh {
+      }
+      Panda_link0_3Mesh {
+      }
+      Panda_link0_4Mesh {
+      }
+      Panda_link0_5Mesh {
+      }
+      Panda_link0_6Mesh {
+      }
+      Panda_link0_7Mesh {
+      }
+      Panda_link0_8Mesh {
+      }
+      Panda_link0_9Mesh {
+      }
+      Panda_link0_10Mesh {
+      }
+      Panda_link0_11Mesh {
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 0.000000 0.000000 1.000000
+          anchor 0.000000 0.000000 0.333000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "panda_joint1"
+            maxVelocity 2.1750
+            minPosition -2.8973
+            maxPosition 2.8973
+            maxTorque 87.0
+          }
+          PositionSensor {
+            name "panda_joint1_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation 0.000000 0.000000 0.333000
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Panda_link1_0Mesh {
+            }
+            HingeJoint {
+              jointParameters HingeJointParameters {
+                axis 0.000000 1.000000 0.000000
+                anchor 0.000000 0.000000 0.000000
+                dampingConstant 0.0
+                staticFriction 0.0
+              }
+              device [
+                RotationalMotor {
+                  name "panda_joint2"
+                  maxVelocity 2.1750
+                  minPosition -1.7628
+                  maxPosition 1.7628
+                  maxTorque 87.0
+                }
+                PositionSensor {
+                  name "panda_joint2_sensor"
+                }
+              ]
+              endPoint Solid {
+                translation 0.000000 0.000000 0.000000
+                rotation -1.000000 0.000000 0.000000 1.570796
+                children [
+                  Panda_link2_0Mesh {
+                  }
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0.000000 -1.000000 0.000000
+                      anchor 0.000000 -0.316000 0.000000
+                      dampingConstant 0.0
+                      staticFriction 0.0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "panda_joint3"
+                        maxVelocity 2.1750
+                        minPosition -2.8973
+                        maxPosition 2.8973
+                        maxTorque 87.0
+                      }
+                      PositionSensor {
+                        name "panda_joint3_sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation 0.000000 -0.316000 0.000000
+                      rotation 1.000000 0.000000 0.000000 1.570796
+                      children [
+                        Panda_link3_0Mesh {
+                        }
+                        Panda_link3_1Mesh {
+                        }
+                        Panda_link3_2Mesh {
+                        }
+                        Panda_link3_3Mesh {
+                        }
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            axis 0.000000 -1.000000 0.000000
+                            anchor 0.082500 0.000000 0.000000
+                            dampingConstant 0.0
+                            staticFriction 0.0
+                          }
+                          device [
+                            RotationalMotor {
+                              name "panda_joint4"
+                              maxVelocity 2.1750
+                              minPosition -3.0718
+                              maxPosition 0.0
+                              maxTorque 87.0
+                            }
+                            PositionSensor {
+                              name "panda_joint4_sensor"
+                            }
+                          ]
+                          endPoint Solid {
+                            translation 0.082500 0.000000 0.000000
+                            rotation 1.000000 0.000000 0.000000 1.570796
+                            children [
+                              Panda_link4_0Mesh {
+                              }
+                              Panda_link4_1Mesh {
+                              }
+                              Panda_link4_2Mesh {
+                              }
+                              Panda_link4_3Mesh {
+                              }
+                              HingeJoint {
+                                jointParameters HingeJointParameters {
+                                  axis 0.000000 1.000000 0.000000
+                                  anchor -0.082500 0.384000 0.000000
+                                  dampingConstant 0.0
+                                  staticFriction 0.0
+                                }
+                                device [
+                                  RotationalMotor {
+                                    name "panda_joint5"
+                                    maxVelocity 2.6100
+                                    minPosition -2.8973
+                                    maxPosition 2.8973
+                                    maxTorque 12.0
+                                  }
+                                  PositionSensor {
+                                    name "panda_joint5_sensor"
+                                  }
+                                ]
+                                endPoint Solid {
+                                  translation -0.082500 0.384000 0.000000
+                                  rotation -1.000000 0.000000 0.000000 1.570796
+                                  children [
+                                    Panda_link5_0Mesh {
+                                    }
+                                    Panda_link5_1Mesh {
+                                    }
+                                    Panda_link5_2Mesh {
+                                    }
+                                    Panda_link5_3Mesh {
+                                    }
+                                    HingeJoint {
+                                      jointParameters HingeJointParameters {
+                                        axis 0.000000 -1.000000 0.000000
+                                        anchor 0.000000 0.000000 0.000000
+                                        dampingConstant 0.0
+                                        staticFriction 0.0
+                                      }
+                                      device [
+                                        RotationalMotor {
+                                          name "panda_joint6"
+                                          maxVelocity 2.6100
+                                          minPosition -0.0175
+                                          maxPosition 3.7525
+                                          maxTorque 12.0
+                                        }
+                                        PositionSensor {
+                                          name "panda_joint6_sensor"
+                                        }
+                                      ]
+                                      endPoint Solid {
+                                        translation 0.000000 0.000000 0.000000
+                                        rotation 1.000000 0.000000 0.000000 1.570796
+                                        children [
+                                          Panda_link6_0Mesh {
+                                          }
+                                          Panda_link6_1Mesh {
+                                          }
+                                          Panda_link6_2Mesh {
+                                          }
+                                          Panda_link6_3Mesh {
+                                          }
+                                          Panda_link6_4Mesh {
+                                          }
+                                          Panda_link6_5Mesh {
+                                          }
+                                          Panda_link6_6Mesh {
+                                          }
+                                          Panda_link6_7Mesh {
+                                          }
+                                          Panda_link6_8Mesh {
+                                          }
+                                          Panda_link6_9Mesh {
+                                          }
+                                          Panda_link6_10Mesh {
+                                          }
+                                          Panda_link6_11Mesh {
+                                          }
+                                          Panda_link6_12Mesh {
+                                          }
+                                          Panda_link6_13Mesh {
+                                          }
+                                          Panda_link6_14Mesh {
+                                          }
+                                          Panda_link6_15Mesh {
+                                          }
+                                          Panda_link6_16Mesh {
+                                          }
+                                          Panda_link6_17Mesh {
+                                          }
+                                          HingeJoint {
+                                            jointParameters HingeJointParameters {
+                                              axis 0.000000 -1.000000 0.000000
+                                              anchor 0.088000 0.000000 0.000000
+                                              dampingConstant 0.0
+                                              staticFriction 0.0
+                                            }
+                                            device [
+                                              RotationalMotor {
+                                                name "panda_joint7"
+                                                maxVelocity 2.6100
+                                                minPosition -2.8973
+                                                maxPosition 2.8973
+                                                maxTorque 12.0
+                                              }
+                                              PositionSensor {
+                                                name "panda_joint7_sensor"
+                                              }
+                                            ]
+                                            endPoint Solid {
+                                              translation 0.088000 0.000000 0.000000
+                                              rotation 1.000000 0.000000 0.000000 1.570796
+                                              children [
+                                                Panda_link7_0Mesh {
+                                                }
+                                                Panda_link7_1Mesh {
+                                                }
+                                                Panda_link7_2Mesh {
+                                                }
+                                                Panda_link7_3Mesh {
+                                                }
+                                                Panda_link7_4Mesh {
+                                                }
+                                                Panda_link7_5Mesh {
+                                                }
+                                                Panda_link7_6Mesh {
+                                                }
+                                                Panda_link7_7Mesh {
+                                                }
+                                                Panda_link7_8Mesh {
+                                                }
+                                                Solid {
+                                                  translation 0.000000 0.000000 0.107000
+                                                  rotation 0.000000 1.000000 0.000000 0.000000
+                                                  children [
+                                                    Solid {
+                                                      translation 0.000000 0.000000 0.000000
+                                                      rotation 0.000000 0.000000 -1.000000 0.785398
+                                                      children [
+                                                        Panda_hand_0Mesh {
+                                                        }
+                                                        Panda_hand_1Mesh {
+                                                        }
+                                                        Panda_hand_2Mesh {
+                                                        }
+                                                        Panda_hand_3Mesh {
+                                                        }
+                                                        Panda_hand_4Mesh {
+                                                        }
+                                                      ]
+                                                      name "panda_hand"
+                                                      boundingObject Transform {
+                                                        translation -0.000010 -0.001782 0.020019
+                                                        rotation 1.000000 0.000000 0.000000 0.000000
+                                                        children [
+                                                          Box {
+                                                            size 0.063252 0.204416 0.091887
+                                                          }
+                                                        ]
+                                                      }
+                                                      physics Physics {
+                                                      }
+                                                    }
+                                                  ]
+                                                  name "panda_link8"
+                                                  boundingObject Transform {
+                                                  translation 0.018636 0.018579 0.079414
+                                                  rotation 1.000000 0.000000 0.000000 0.000000
+                                                  children [
+                                                    Box {
+                                                      size 0.125341 0.125217 0.054847
+                                                    }
+                                                  ]
+                                                }
+                                                physics Physics {
+                                                }
+                                                }
+                                              ]
+                                              name "panda_link7"
+                                              boundingObject Transform {
+                                                translation 0.018636 0.018579 0.079414
+                                                rotation 1.000000 0.000000 0.000000 0.000000
+                                                children [
+                                                  Box {
+                                                    size 0.125341 0.125217 0.054847
+                                                  }
+                                                ]
+                                              }
+                                              physics Physics {
+                                              }
+                                            }
+                                          }
+                                        ]
+                                        name "panda_link6"
+                                        boundingObject Transform {
+                                          translation 0.042101 0.015146 0.006162
+                                          rotation 1.000000 0.000000 0.000000 0.000000
+                                          children [
+                                            Box {
+                                              size 0.180213 0.133069 0.100294
+                                            }
+                                          ]
+                                        }
+                                        physics Physics {
+                                        }
+                                      }
+                                    }
+                                  ]
+                                  name "panda_link5"
+                                  boundingObject Transform {
+                                    translation 0.000033 0.037388 -0.106193
+                                    rotation 1.000000 0.000000 0.000000 0.000000
+                                    children [
+                                      Box {
+                                        size 0.110100 0.185032 0.316723
+                                      }
+                                    ]
+                                  }
+                                  physics Physics {
+                                  }
+                                }
+                              }
+                            ]
+                            name "panda_link4"
+                            boundingObject Transform {
+                              translation -0.041234 0.034430 0.027923
+                              rotation 1.000000 0.000000 0.000000 0.000000
+                              children [
+                                Box {
+                                  size 0.192746 0.179159 0.166259
+                                }
+                              ]
+                            }
+                            physics Physics {
+                            }
+                          }
+                        }
+                      ]
+                      name "panda_link3"
+                      boundingObject Transform {
+                        translation 0.041458 0.028143 -0.032931
+                        rotation 1.000000 0.000000 0.000000 0.000000
+                        children [
+                          Box {
+                            size 0.192207 0.166120 0.176174
+                          }
+                        ]
+                      }
+                      physics Physics {
+                      }
+                    }
+                  }
+                ]
+                name "panda_link2"
+                boundingObject Transform {
+                  translation -0.000084 -0.069395 0.037196
+                  rotation 1.000000 0.000000 0.000000 0.000000
+                  children [
+                    Box {
+                      size 0.110138 0.249230 0.184586
+                    }
+                  ]
+                }
+                physics Physics {
+                }
+              }
+            }
+          ]
+          name "panda_link1"
+          boundingObject Transform {
+            translation 0.000087 -0.037090 -0.068515
+            rotation 1.000000 0.000000 0.000000 0.000000
+            children [
+              Box {
+                size 0.110148 0.184565 0.246977
+              }
+            ]
+          }
+          physics Physics {
+          }
+        }
+      }
+    ]
+    name IS name
+    boundingObject Transform {
+      translation -0.041256 0.000028 0.069985
+      rotation 1.000000 0.000000 0.000000 0.000000
+      children [
+        Box {
+          size 0.225646 0.189284 0.140035
+        }
+      ]
+    }
+    %{ if fields.staticBase.value == false then }%
+    physics Physics {
+    }
+    %{ end }%
+  }
+}

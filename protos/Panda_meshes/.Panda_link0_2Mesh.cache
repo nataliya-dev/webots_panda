@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: 3951504378b995998eb3e0d81c5da9d8
+needsRobotAncestor: 0
+baseType: Shape
+slotType: 
+parameters: 
+tags: hidden
+license:  Apache License 2.0
+licenseUrl:  http://www.apache.org/licenses/LICENSE-2.0
+documentationUrl: 
+info: Extracted\sfrom:\s/home/nataliya/moveit_resources/panda_description/urdf/panda.urdf
