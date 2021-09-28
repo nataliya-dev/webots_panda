@@ -8,12 +8,10 @@ PROTO Panda_link7_7Mesh [
 ]
 {
   Shape {
-    appearance PBRAppearance {
-      baseColor 0.500000 0.500000 0.500000
-      transparency 0.000000
-      roughness 1.000000
-      metalness 0
-      emissiveColor 0.000000 0.000000 0.000000
+    appearance Appearance {
+      material Material {
+        diffuseColor 0.5 0.5 0.5
+      }
     }
     geometry DEF link7_7 IndexedLineSet {
       coord Coordinate {
